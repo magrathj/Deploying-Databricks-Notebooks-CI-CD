@@ -3,10 +3,15 @@ Using docker to deploy packages and notebooks using docker to an Azure Databrick
 
 
 ```
-    conda create --name pyspark-databricks-poc-test 
-	conda activate pyspark-databricks-poc-test 
+    conda create --name pyspark-databricks-poc-test  
+```
 
 ```
+	conda activate pyspark-databricks-poc-test 
+```
+
+
+### Recreate env and run tests
 
 ```
     conda deactivate &&

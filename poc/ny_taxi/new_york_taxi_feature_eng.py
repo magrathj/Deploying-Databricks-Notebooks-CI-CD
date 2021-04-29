@@ -8,7 +8,7 @@ def read_raw_taxi_convert_to_parquet(spark, source_bucket, release_bucket):
     parquet_df = spark.read.parquet(release_bucket + TAXI_PARQUET_FILE)
     return parquet_df
     
- def run(
+def run(
         source_bucket=AWS_BUCKET_NAME,
         release_bucket=AWS_BUCKET_NAME,
         **kwargs
